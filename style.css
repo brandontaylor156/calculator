@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#calculator {
+    background-color: #222;
+    width: 15%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+button:not(#equals) {
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+}
+
+.operator {
+    background-color: darkorange;
+}
+
+button:not(.operator):not(#equals) {
+    background-color: #666666;
+}
+
+#equals {
+    width: 100%;
+
+}
+
