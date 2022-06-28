@@ -10,6 +10,12 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 30px;
+    padding: 10px;
+}
+
+#display {
+    color: white;
+    font-size: x-large;
 }
 
 .row {
@@ -20,7 +26,6 @@
 }
 
 button {
-    border-radius: 50%;
     cursor: pointer;
     border: none;
 }
@@ -30,6 +35,7 @@ button:not(#equals) {
     width: 3rem;
     height: 3rem;
     color: #fff;
+    border-radius: 50%;
 }
 
 .operator {
@@ -42,6 +48,7 @@ button:not(.operator):not(#equals) {
 
 #equals {
     width: 100%;
-
+    padding: 5% 0;
+    border-radius: 20px;
 }
 
