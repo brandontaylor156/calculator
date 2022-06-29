@@ -8,8 +8,7 @@ function press(digit) {
     }
     else
     {
-        if (document.querySelector('#display').innerText != '0')
-            document.querySelector('#display').innerText += digit;
+        document.querySelector('#display').innerText += digit;
     }
     opHitLast = false;
     equation += digit;
@@ -32,5 +31,6 @@ function reset() {
 }
 
 function calculate() {
-
+    document.querySelector('#display').innerText = eval(equation);
+    console.log(eval(equation));
 }
