@@ -1,6 +1,7 @@
 var equation = "";
 var opHitLast = false;
 var calculated = false;
+var result  = '';
 
 function press(digit) {
     if (calculated == true)
@@ -29,16 +30,18 @@ function clr() {
 function setOP(char) {
     if (calculated == true)
     {
-        
+        equation = result;
     }
 
     if (opHitLast == true)
     {
         equation = equation.slice(0, -1) + char;
     }
-    else
+    else {
         equation += char;
+    }
     opHitLast = true;
+    calculated = false;
 }
 
 function reset() {
@@ -50,7 +53,8 @@ function reset() {
 
 function calculate() {
     document.querySelector('#display').innerText = eval(equation);
-    console.log(eval(equation));
+    result = eval(equation);
+    console.log(result);
     calculated = true;
     opHitLast = false;
 }
